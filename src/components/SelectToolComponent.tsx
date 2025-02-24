@@ -1,24 +1,25 @@
 import { Link } from "react-router-dom";
 import { TOOLS } from "../constants";
 import { USAlgo2025Leaderboard } from "./USAlgo2025Leaderboard";
+import CarouselComponent from "./CarouselComponent";
 export function SelectToolComponent() {
   return (
     <div className="text-center w-full">
       <div className="mx-auto my-2 md:my-4">
         <div className="flex flex-col lg:flex-row items-center justify-evenly lg:gap-2 gap-4">
+          <CarouselComponent
+            images={[
+              { path: "./wenwallet.png", url: "https://wallet.wen.tools" },
+              { path: "./wenswap.png", url: "https://swap.wen.tools" },
+              { path: "./wenbot.png", url: "https://discord.com/oauth2/authorize?client_id=1325220652332089435" },
+            ]}
+          />
           <a
-            href="https://wallet.wen.tools/"
+            href="https://algoxnft.com/shuffle/2943"
             target="blank"
             className="lg:w-[34%] w-[70%]"
           >
-            <img src="/wenwallet.png" alt="" />
-          </a>
-          <a
-            href="https://swap.wen.tools/"
-            target="blank"
-            className="lg:w-[34%] w-[70%]"
-          >
-            <img src="/wenswap.png" alt="" />
+            <img src="/usalgo.gif" alt="" />
           </a>
         </div>
       </div>
